@@ -4,6 +4,8 @@ import axios from 'axios';
 export default class EditTodo extends Component {
 
     constructor(props) {
+
+        console.log(props)
         super(props);
 
         this.onChangeTodoDescription = this.onChangeTodoDescription.bind(this);
@@ -40,7 +42,6 @@ export default class EditTodo extends Component {
             todo_description: e.target.value
         });
     }
-
     onChangeTodoResponsible(e) {
         this.setState({
             todo_responsible: e.target.value
@@ -69,9 +70,12 @@ export default class EditTodo extends Component {
         };
         console.log(obj);
         axios.post('http://localhost:4000/todos/update/'+this.props.match.params.id, obj)
-            .then(res => console.log(res.data));
+            .then(res => {
+                alert("Record Updated Successfully");
+                this.props.history.push('/');
+            });
         
-        this.props.history.push('/');
+       
     }
 
     render() {

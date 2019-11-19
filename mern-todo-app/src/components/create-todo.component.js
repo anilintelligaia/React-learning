@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { useAlert } from "react-alert";
 export default class CreateTodo extends Component {
     constructor(props) {
         super(props);
@@ -45,7 +46,10 @@ export default class CreateTodo extends Component {
         };
 
         axios.post('http://localhost:4000/todos/add', newTodo)
-            .then(res => console.log(res.data));
+            .then(res => {
+                alert("Task Added Successfully");
+                this.props.history.push('/');
+            });
 
         this.setState({
             todo_description: '',

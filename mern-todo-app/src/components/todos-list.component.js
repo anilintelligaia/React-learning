@@ -10,8 +10,13 @@ const Todo = props => (
         <td>
             <Link to={"/edit/"+props.todo._id}>Edit</Link>
         </td>
+        <td>
+           <Link to={"/delete/"+props.todo._id}>Delete</Link>
+           
+        </td>
     </tr>
 )
+
 
 export default class TodosList extends Component {
 
@@ -30,7 +35,7 @@ export default class TodosList extends Component {
             })
     }
 
-    todoList() {
+    todoList=()=> {
         return this.state.todos.map(function(currentTodo, i){
             return <Todo todo={currentTodo} key={i} />;
         })
@@ -46,7 +51,8 @@ export default class TodosList extends Component {
                             <th>Task-Name</th>
                             <th>Task-Details</th>
                             <th>Priority</th>
-                            <th>Action</th>
+                            <th>Update</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
