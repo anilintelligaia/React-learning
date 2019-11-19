@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/anilintelligaia/react-learning/static/css/main.34de6062.chunk.css",
-    "main.js": "/anilintelligaia/react-learning/static/js/main.ffe9bd20.chunk.js",
-    "main.js.map": "/anilintelligaia/react-learning/static/js/main.ffe9bd20.chunk.js.map",
-    "runtime-main.js": "/anilintelligaia/react-learning/static/js/runtime-main.6358d9ff.js",
-    "runtime-main.js.map": "/anilintelligaia/react-learning/static/js/runtime-main.6358d9ff.js.map",
-    "static/css/2.fa17795f.chunk.css": "/anilintelligaia/react-learning/static/css/2.fa17795f.chunk.css",
-    "static/js/2.8e23bbba.chunk.js": "/anilintelligaia/react-learning/static/js/2.8e23bbba.chunk.js",
-    "static/js/2.8e23bbba.chunk.js.map": "/anilintelligaia/react-learning/static/js/2.8e23bbba.chunk.js.map",
-    "index.html": "/anilintelligaia/react-learning/index.html",
-    "precache-manifest.5a3bf03d750ff765d36a8e94f38681d7.js": "/anilintelligaia/react-learning/precache-manifest.5a3bf03d750ff765d36a8e94f38681d7.js",
-    "service-worker.js": "/anilintelligaia/react-learning/service-worker.js",
-    "static/css/2.fa17795f.chunk.css.map": "/anilintelligaia/react-learning/static/css/2.fa17795f.chunk.css.map",
-    "static/css/main.34de6062.chunk.css.map": "/anilintelligaia/react-learning/static/css/main.34de6062.chunk.css.map"
+    "main.css": "/react-learning/static/css/main.34de6062.chunk.css",
+    "main.js": "/react-learning/static/js/main.67c8e982.chunk.js",
+    "main.js.map": "/react-learning/static/js/main.67c8e982.chunk.js.map",
+    "runtime-main.js": "/react-learning/static/js/runtime-main.5cfe8dca.js",
+    "runtime-main.js.map": "/react-learning/static/js/runtime-main.5cfe8dca.js.map",
+    "static/css/2.fa17795f.chunk.css": "/react-learning/static/css/2.fa17795f.chunk.css",
+    "static/js/2.8e23bbba.chunk.js": "/react-learning/static/js/2.8e23bbba.chunk.js",
+    "static/js/2.8e23bbba.chunk.js.map": "/react-learning/static/js/2.8e23bbba.chunk.js.map",
+    "index.html": "/react-learning/index.html",
+    "precache-manifest.0b990d6b3978475b037df4d7f256c906.js": "/react-learning/precache-manifest.0b990d6b3978475b037df4d7f256c906.js",
+    "service-worker.js": "/react-learning/service-worker.js",
+    "static/css/2.fa17795f.chunk.css.map": "/react-learning/static/css/2.fa17795f.chunk.css.map",
+    "static/css/main.34de6062.chunk.css.map": "/react-learning/static/css/main.34de6062.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.6358d9ff.js",
+    "static/js/runtime-main.5cfe8dca.js",
     "static/css/2.fa17795f.chunk.css",
     "static/js/2.8e23bbba.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.ffe9bd20.chunk.js"
+    "static/js/main.67c8e982.chunk.js"
   ]
 }
