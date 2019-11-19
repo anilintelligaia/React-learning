@@ -57,10 +57,10 @@ export default class CreateTodo extends Component {
     render() {
         return (
             <div style={{marginTop: 10}}>
-                <h3>Create New Todo</h3>
+                <h3>SET NEW TASK</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group"> 
-                        <label>Description: </label>
+                        <label>Task-Name: </label>
                         <input  type="text"
                                 className="form-control"
                                 value={this.state.todo_description}
@@ -68,7 +68,7 @@ export default class CreateTodo extends Component {
                                 />
                     </div>
                     <div className="form-group">
-                        <label>Responsible: </label>
+                        <label>Task-Details: </label>
                         <input 
                                 type="text" 
                                 className="form-control"

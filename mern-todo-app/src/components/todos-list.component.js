@@ -39,12 +39,12 @@ export default class TodosList extends Component {
     render() {
         return (
             <div>
-                <h3>Todos List</h3>
+                <h3>Task Alloted List</h3>
                 <table className="table table-striped" style={{ marginTop: 20 }} >
                     <thead>
                         <tr>
-                            <th>Description</th>
-                            <th>Responsible</th>
+                            <th>Task-Name</th>
+                            <th>Task-Details</th>
                             <th>Priority</th>
                             <th>Action</th>
                         </tr>

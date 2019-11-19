@@ -77,10 +77,10 @@ export default class EditTodo extends Component {
     render() {
         return (
             <div>
-                <h3 align="center">Update Todo</h3>
+                <h3 align="center">Update Task</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group"> 
-                        <label>Description: </label>
+                        <label>Task-Name: </label>
                         <input  type="text"
                                 className="form-control"
                                 value={this.state.todo_description}
@@ -88,7 +88,7 @@ export default class EditTodo extends Component {
                                 />
                     </div>
                     <div className="form-group">
-                        <label>Responsible: </label>
+                        <label>Task-Details: </label>
                         <input 
                                 type="text" 
                                 className="form-control"
