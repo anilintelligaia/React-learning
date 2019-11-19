@@ -15,7 +15,7 @@ mongoose.Promise = global.Promise;
 mongoose
   .connect(
     "mongodb+srv://anil123:anil123@userdata-fbk86.mongodb.net/todos?retryWrites=true",
-    { useNewUrlParser: true , useUnifiedTopology: true}
+    { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
     console.log("Connected to Database");
@@ -25,7 +25,6 @@ mongoose
   });
 
 todoRoutes.route("/").get(function(req, res) {
-
   Todo.find(function(err, todos) {
     if (err) {
       console.log(err);
@@ -42,7 +41,6 @@ todoRoutes.route("/:id").get(function(req, res) {
 });
 
 todoRoutes.route("/update/:id").post(function(req, res) {
-
   Todo.findById(req.params.id, function(err, todo) {
     if (!todo) res.status(404).send("data is not found");
     else todo.todo_description = req.body.todo_description;
@@ -62,7 +60,6 @@ todoRoutes.route("/update/:id").post(function(req, res) {
 });
 
 todoRoutes.route("/add").post(function(req, res) {
-
   let todo = new Todo(req.body);
   todo
     .save()
@@ -75,7 +72,6 @@ todoRoutes.route("/add").post(function(req, res) {
 });
 
 todoRoutes.route("/delete/:id").get(function(req, res) {
-
   res.header("Access-Control-Allow-Origin", "*");
   Todo.findByIdAndRemove({ _id: req.params.id }, function(err, business) {
     if (err) res.json(err);
@@ -83,8 +79,6 @@ todoRoutes.route("/delete/:id").get(function(req, res) {
   });
 });
 app.use("/todos", todoRoutes);
-
-
 
 app.listen(PORT, function() {
   console.log("Server is running on Port: " + PORT);
