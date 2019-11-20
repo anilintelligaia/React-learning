@@ -4,6 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const todoRoutes = express.Router();
+const router= require('./server/routes/api/signin');
 const PORT = 4000;
 
 let Todo = require("./todo.model");
@@ -79,7 +80,7 @@ todoRoutes.route("/delete/:id").get(function(req, res) {
   });
 });
 app.use("/todos", todoRoutes);
-
+app.use("/todos", router)
 app.listen(PORT, function() {
   console.log("Server is running on Port: " + PORT);
 });

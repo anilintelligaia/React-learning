@@ -11,7 +11,7 @@ const Todo = props => (
       <Link to={"/edit/" + props.todo._id}>Edit</Link>
     </td>
     <td>
-      <Link to={"/delete/" + props.todo._id}>Delete</Link>
+      <Link style={{color: "red"}} to={"/delete/" + props.todo._id}>Delete</Link>
     </td>
   </tr>
 );
@@ -40,6 +40,7 @@ export default class TodosList extends Component {
   };
 
   render() {
+     
     return (
       <div>
         <h3>Task Alloted List</h3>
